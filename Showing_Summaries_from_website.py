@@ -16,6 +16,7 @@ We have no id though, and in HTML and id is guaranteed to be unique
 A class is not necessarily unique, and using it will only return the first result for that class'''
 
 search = driver.find_element_by_name("s")
+search.clear() # so that it doesn't append to existing text
 search.send_keys("test") # this tipes the word 'test' into the box
 search.send_keys(Keys.RETURN) # hits enter
 
