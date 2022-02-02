@@ -14,8 +14,6 @@ cookie_count = driver.find_element_by_id("cookies")
 items = [driver.find_element_by_id("productPrice" + str(i)) for i in range(1,-1,-1)] #  Goes from 1 (inclusive) to -1 
 #(exclusive)
 
-
-
 for i in range(1000):
     actions = ActionChains(driver)
     actions.click(cookie)
